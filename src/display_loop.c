@@ -16,6 +16,7 @@
 #include "animations/bitmapscroller/amphibian.h"
 #include "animations/bitmapscroller/outofspec.h"
 #include "animations/bitmapscroller/fairydust.h"
+#include "animations/bitmapscroller/thisisnotdetroit.h"
 #include "animations/fpmath_patterns.h"
 #include "animations/mherweg.h"
 #include "animations/moire.h"
@@ -226,26 +227,32 @@ void display_loop(){
 			break;
 #endif
 
-#ifdef ANIMATION_PLASMA
+#ifdef ANIMATION_THISISNOTDETROIT
 		case 22:
+			logo_thisIsNotDetroit();
+			break;
+#endif
+
+#ifdef ANIMATION_PLASMA
+		case 23:
 			plasma();
 			break;
 #endif
 
 #ifdef ANIMATION_PSYCHEDELIC
-		case 23:
+		case 24:
 			psychedelic();
 			break;
 #endif
 
 #ifdef ANIMATION_BLACKHOLE
-		case 24:
+		case 25:
 			blackhole();
 			break;
 #endif
 
 #ifdef ANIMATION_SQUARES
-		case 25:
+		case 26:
 			squares();
 			break;
 #endif
