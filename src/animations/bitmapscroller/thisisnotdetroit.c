@@ -135,7 +135,7 @@ static uint8_t logo_thisIsNotDetroit_getChunk(unsigned char const nBitPlane,
 
 void logo_thisIsNotDetroit()
 {
-	// width 64, height 55, 2 bitplanes (4 colors), 600 frames à 100ms
+	// width 64, height 55, 2 bitplanes (4 colors), 600 frames à 75ms
 	// frame change and viewport movement after every cyle (both dividers are 1)
-	bitmap_scroll(64, 55, 2, 600, 100, 1, 1, logo_thisIsNotDetroit_getChunk);
+	bitmap_scroll(64, 55, 2, 600, 75, 1, 1, logo_thisIsNotDetroit_getChunk);
 }
