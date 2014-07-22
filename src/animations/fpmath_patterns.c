@@ -43,9 +43,9 @@
 
 
 // low precision for displays where each dimension is less than or equal to 16
-#if NUM_COLS <= 16 && NUM_ROWS <= 16
+//#if NUM_COLS <= 16 && NUM_ROWS <= 16
 	#define FP_LOW_PRECISION
-#endif
+//#endif
 
 
 #ifdef FP_LOW_PRECISION
